@@ -6,10 +6,9 @@
 *{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
+  font-size: 100%;
   font-weight:0;
   font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
 } 
 footer{
    background-color: var(--color_footer);
@@ -19,23 +18,21 @@ footer{
 
 .caja{
     background-color: #D8FFF9;
-    white-space: nowrap;
-    display: inline-block;
+     white-space: nowrap;
+     display: inline-block;
     padding: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
+     padding-left: 1rem;
+     padding-right: 1rem;
+ }
 
 #iconos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+ padding: 1rem;   
+align-items: center;
+ }
 
 #iconos img{
     white-space: nowrap;
     display: inline-block;
-    margin-right: 2%;
+    margin-right: 2rem;
 }
-
 
