@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-color: #FFF9EC;
+    margin: auto;
+    
+}
+
+.container{
+    margin-top: 40px;
+}
+
+.btn{
+    color: white;
+   background-color: #B2AB99;
+}
+
+.text-center{
+    margin-top: 150px;
+}
+
+.formulario{
+    margin-top: 70px;
+}
+
+.right {
+    margin-left: 200px;
+}
+
+:root{
+    --color_footer: #A1C9C1;
+
+}
+
+*{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 100%;
+  font-weight:0;
+  font-style: normal;
+} 
+footer{
+   background-color: var(--color_footer);
+    padding: 2rem;
+}
+
+
+.caja{
+    background-color: #D8FFF9;
+     white-space: nowrap;
+     display: inline-block;
+    padding: 0.5rem;
+     padding-left: 1rem;
+     padding-right: 1rem;
+ }
+
+#iconos{
+ padding: 1rem;   
+align-items: center;
+ }
+
+#iconos img{
+    white-space: nowrap;
+    display: inline-block;
+    margin-right: 2rem;
+}
