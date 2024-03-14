@@ -4,162 +4,229 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../img/icon/icon-shoe.png">
+
+
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- Estilos css -->
     <link rel="stylesheet" href="../../style/style.css">
     <title>Sobre nosotros</title>
+
+
+   <!--=============== SWIPER CSS ===============-->
+   <link rel="stylesheet" href="../../style/swiper-bundle.min.css">
+
 </head>
 <body>
+    <!--header-->
     <header>
-        <div>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Navbar scroll</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Link
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Link</a>
-                      </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                  </div>
-                </div>
-              </nav>
+            
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid" bg-transparent>
+          <a class="iconLogo" href="#">
+            <img src="../images/logo.jpg" alt="LogoS&G" width="55" height="45">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                  <li><a class="dropdown-item" href="#">Mujer</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Hombre</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Acerca de nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" >Contactanos</a>
+              </li>
+            </ul>
+            <style>
+              a{
+                text-decoration: none;
+              }
+            </style>
+            <div class="icons">
+              <a class="iconUser" href="">
+                  <img src="../images/iconosNavBar/user.png" alt="iconoUsuario" width="20" height="20">
+              </a>
+              <a class="iconFavorites" href="">
+                  <img src="../images/iconosNavBar/heart.png" alt="iconoFavoritos" width="20" height="20">
+              </a>
+              <a class="iconCart" href="">
+                  <img src="../images/iconosNavBar/cart.png" alt="iconoCarrito" width="20" height="20">
+              </a>
+          </div>
+
         </div>
+      </nav>
     </header>
-    <main class="container text-start">
-        <div id="nosotros">
-            <div>
-                <img src="../img/sobre-nosotros/fondo.jpg" alt="" class="d-sm-none d-none d-lg-block">
-            </div>
-            <div class="m-3" id="proyecto">
-                <!-- <img class="img-fluid" src="../img/icon/logo.png" height="100" alt="S&G-logo"> -->
-                <h4 class="m-3">Objetivo</h4>
-                <p class="m-5 w-500-block" id="nosotros-text">
-                    Digitalizar la venta de calzado para marcas locales por medio de un e-commerce, dándole un mayor
-                    alcance y aumentar ventas.
-                    Actualmente las zapaterías "Calzado GUS" y "Princess" se enfrentan al desafío de adaptarse al entorno digital para
-                    ampliar sus oportunidades de venta. La ausencia de una presencia en línea limita su alcance y
-                    capacidad para llegar a nuevos clientes, lo que a su vez afecta negativamente las ventas. La
-                    digitalización de la venta de calzado a través de un e-commerce representa una solución acertada
-                    para estas marcas, permitiéndoles expandir su alcance geográfico y aumentar sus ventas de manera
-                    significativa.
-                </p>
-            </div>
-        </div>
-        <section class="" id="biografia">
-            <div id="carouselExampleCaptions" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
-                        aria-label="Slide 5"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
-                        aria-label="Slide 6"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
-                        aria-label="Slide 7"></button>
+    <!--header-->
+
+
+    <main class="container-fluid text-start">
+
+        <!-- imagen y vision sobre nosotros -->
+        <section >
+            <div id="nosotros" class="row ">
+               <div class="col-6 m-3 contenedor_imagen_nosotros">
+                  <img src="../img/sobre-nosotros/fondo.jpg" alt="" class="d-sm-none d-none d-lg-block">
+               </div>
+               
+               <div class="col-6 m-3" id="contenedor_vision">
+                  <h4 class="m-3">Objetivo</h4>
+                  <p class="m-5 w-500-block" id="nosotros-text">
+                     Digitalizar la venta de calzado para marcas locales por medio de un e-commerce, dándole un mayor
+                     alcance y aumentar ventas.
+                     Actualmente las zapaterías "Calzado GUS" y "Princess" se enfrentan al desafío de adaptarse al entorno digital para
+                     ampliar sus oportunidades de venta. La ausencia de una presencia en línea limita su alcance y
+                     capacidad para llegar a nuevos clientes, lo que a su vez afecta negativamente las ventas. La
+                     digitalización de la venta de calzado a través de un e-commerce representa una solución acertada
+                     para estas marcas, permitiéndoles expandir su alcance geográfico y aumentar sus ventas de manera
+                     significativa.
+                  </p>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active d-block w-100">
-                        <img src="../img/Team/Emit.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Axel Sara</h5>
-                            <p>Ingeniero en Mecatrónica apasionado por la tecnología, programación y robotica. <br>
-                                Entusiasmado por el continuo aprendizaje y mejora. <br>Catador de monster y gomitas. Es plata en valorant.
-                                <br>Listo para enfrentar nuevos y diferentes retos.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../img/test/powfu.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Byran Islas</h5>
-                            <p>Insert text</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../img/Team/Alan.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Alan Bastida</h5>
-                            <p>Insert text</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../img/test/powfu.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Donaji Coello</h5>
-                            <p>Insert text</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../img/Team/Ana.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Karen Enriquez</h5>
-                            <p>Diseñadora gráfica y apasionada del Desarrollo Web con gran interés por aprender cosas
-                                nuevas y aficionada a pintar con acrílicos y acuarelas.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../img/test/powfu.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Charly Mtz</h5>
-                            <p>Desarrollador java apasionado por la programación, comprometido con el desarrollo de
-                                soluciones innovadoras y el diseño UI/UX. Mi enfoque se centra en fusionar la
-                                creatividad con la excelencia técnica para ofrecer resultados sobresalientes.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../img/test/adventure.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Jocelyn Jerónimo</h5>
-                            <p>Insert text</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </section>
+
+
+        <!-- Equipo de desarrollo  -->
+        <section class="container mt-3">
+            <div class="card__container swiper">
+               <div class="card__content mt-3">
+                  <div class="swiper-wrapper">
+
+                     <!-- Card -->
+                     <article class="card__article swiper-slide">
+                        <div class="card__image">
+                           <img src="../../assets/img/Team/Emit.jpg" alt="image" class="card__img">
+                           <div class="card__shadow"></div>
+                           <div>
+                              <p class="card__rol">Scrum Master | Product owner | Developer</p>
+                           </div>
+                        </div>
+         
+                        <div class="card__data">
+                           <h3 class="card__name">Axel Sara</h3>
+                           <p>Ingeniero en Mecatrónica apasionado por la tecnología, programación y robotica. <br>
+                              Entusiasmado por el continuo aprendizaje y mejora. <br>Catador de monster y gomitas. Es plata en valorant.
+                              <br>Listo para enfrentar nuevos y diferentes retos.
+                           </p>
+         
+                           <a href="#" class="card__button">Ver más</a>
+                        </div>
+                     </article>
+                     
+                     <!-- Card 2 -->
+                     <article class="card__article swiper-slide">
+                        <div class="card__image">
+                           <img src="../../assets/img/Team/Alan.jpg" alt="image" class="card__img">
+                           <div class="card__shadow"></div>
+   
+                           <div>
+                              <p class="card__rol">Scrum Master | Product owner | Developer</p>
+                           </div>
+                        </div>
+         
+                        <div class="card__data">
+                           <h3 class="card__name">Alan Bastida</h3>
+                           <p>Egresado de computación que no sabe como llego a acabar la carrera, pero a lo largo de ella descubrí que me apasiona el mundo del desarrollo web y gracias a que me sigue apasionanando puedo tener un aprendizaje continuo. Me gustaría trabajar en el ámbito del Backend y en un futuro lejano tener un refugio de animales para cuidar todos los animalitos.</p>
+         
+                           <a href="#" class="card__button">Ver más</a>
+                        </div>
+                     </article>
+                     
+                     <!-- Card 3 -->
+                     <article class="card__article swiper-slide">
+                        <div class="card__image">
+                           <img src="../../assets/img/Team/Ana.jpg" alt="image" class="card__img">
+                           <div class="card__shadow"></div>
+   
+                           <div>
+                              <p class="card__rol">Scrum Master | Developer</p>
+                           </div>
+                        </div>
+         
+                        <div class="card__data">
+                           <h3 class="card__name">Karen Enriquez</h3>
+                           <p>Diseñadora gráfica y apasionada del Desarrollo Web con gran interés por aprender cosas
+                              nuevas y aficionada a pintar con acrílicos y acuarelas.
+                          </p>
+         
+                          <a href="#" class="card__button">Ver más</a>
+                        </div>
+                     </article>
+
+
+                     <!-- Card 4 -->
+                     <article class="card__article swiper-slide">
+                        <div class="card__image">
+                           <img src="../../assets/img/avatar-4.png" alt="image" class="card__img">
+                           <div class="card__shadow"></div>
+                           <div>
+                              <p class="card__rol">Scrum Master | Developer</p>
+                           </div>
+                        </div>
+         
+                        <div class="card__data">
+                           <h3 class="card__name">Charly Mtz</h3>
+                           <p>Desarrollador java apasionado por la programación, comprometido con el desarrollo de
+                              soluciones innovadoras y el diseño UI/UX. Mi enfoque se centra en fusionar la
+                              creatividad con la excelencia técnica para ofrecer resultados sobresalientes.
+                          </p>
+                           <a href="#" class="card__button">Ver más</a>
+                        </div>
+                     </article>
+                     
+                     <!-- Card 5 -->
+                     <article class="card__article swiper-slide">
+                        <div class="card__image">
+                           <img src="../../assets/img/Team/Joce.jpg" alt="image" class="card__img">
+                           <div class="card__shadow"></div>
+                        </div>
+         
+                        <div class="card__data">
+                           <h3 class="card__name">Jocelyn Jerónimo</h3>
+                           <p>Egresada de Ing. en computación, interesada por la rama de desarrollo web y redes. Me gusta estar en constante aprendizaje para diferentes hobbies, me gusta mucho la CocaCola. 100% team frio.</p>
+                           <p class="team-rol">Scrum Master | Product owner | Developer</p>
+         
+                           <a href="#" class="card__button">Ver más</a>
+                        </div>
+                     </article>
+                  </div>
+               </div>
+   
+               <!-- Navigation buttons -->
+               <div class="swiper-button-next">
+                  <i class="ri-arrow-right-s-line"></i>
+               </div>
+               
+               <div class="swiper-button-prev">
+                  <i class="ri-arrow-left-s-line"></i>
+               </div>
+   
+               <!-- Pagination -->
+               <div class="swiper-pagination"></div>
+            </div>
+         </section>
+
     </main>
     <footer class="mt-3">
         <div class="container-fluid text-center">
@@ -180,8 +247,15 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="../../src/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="../../src/main.js"></script>
 </body>
+
+
+
+
 </html>

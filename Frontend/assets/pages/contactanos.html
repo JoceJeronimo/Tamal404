@@ -25,47 +25,46 @@
 
     <main class="container-fluid contenedor_principal_contactanos">
 
-        <!-- Contenedor imagen contactanos -->
         <section>
-            <img src="../../assets/img/contactanos.jpg" alt="Contactanos">
-        </section>
 
+            <div class="container-fluid">
+                <div class="row contenedor_principal_contactanos">
 
-        <section>
-            <div class="row">
-                <h2>Contactanos</h2>
-                <div class="col-12 contenedor_formulario_contactanos" >
-                    <form id="formContactanos">
-    
-                        <legend>
-                            <h3>Formulario de contacto</h3>
-                        </legend>
-                        <div class="mb-3">
-                            <label for="inputNombreContactanos" class="form-label">Nombre completo</label>
-                            <input type="email" class="form-control" id="inputNombreContactanos" placeholder="Escribe tú nombre completo" title="El nombre solo acepta letras y espacios" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
-                        </div>
-    
-                        <div class="mb-3">
-                            <label for="inputEmailContactanos" class="form-label">Correo electronico</label>
-                            <input type="email" class="form-control" id="inputEmailContactanos" placeholder="XhQpL@example.com"
-                                title="El correo solo acepta letras, numeros, puntos, guiones y guion bajo"
-                                required    
-                            >
-                            
-                        </div>
-                        <div class="mb-3">
-                            <label for="inputMensajeContactanos" class="form-label">Comentario</label>
-                            <textarea class="form-control" id="inputMensajeContactanos" rows="3" placeholder="Escribe aquí tú comentario" title="El comentario no debe de exceder los 255 caracteres" required>
-    
-                            </textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form>
+                    <!-- Imagen -->
+                    <div class="col-6 col-md-6 col-sm-12 contenedor_imagen_contactanos">
+                        <img src="../../assets/img/contactanos/zapato.jpg" alt="imagen_contactanos">
+                    </div>
+
+                    <!-- Formulario -->
+                    <div class="col-6 col-md-6 col-sm-12">
+                        <section class="text-center">
+                            <h1>Contáctanos</h1>
+                        </section>
+                        <form class="formContactanos col-sm-12">
+                            <div class="mb-3">
+                                <label for="inputNombreContactanos" class="form-label">Nombre completo</label>
+                                <input type="text" class="form-control" id="inputNombreContactanos" placeholder="ej. Juan Pérez"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputEmailContactanos" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="inputEmailContactanos"
+                                    placeholder="ej. Juanperez@gmail.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputMensajeContactanos" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="inputMensajeContactanos"
+                                    placeholder="ej. Estoy interesado en..." required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn_formulario_contactanos">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
+
         </section>
-
-
 
 
     </main>
