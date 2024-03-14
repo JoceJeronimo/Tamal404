@@ -58,3 +58,6 @@ footer {
     border-radius: 1rem;
     background-color: rgba(161, 201, 193, 0.38);
 }
+.card {
+    background-color: var(--color-principal);
+}
