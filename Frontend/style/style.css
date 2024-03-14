@@ -1,0 +1,55 @@
+:root {
+    --color-principal: #fff9ec;
+    --color-contraste: #645e4e;
+    --color-claro: #b2ab99;
+    --color_footer: #a1c9c1;
+    --color-claro-azul: #d8fff9;
+}
+
+*{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 100%;
+    font-weight:0;
+    font-style: normal;
+  } 
+  footer{
+     background-color: var(--color_footer);
+      padding: 2rem;
+  }
+  
+  
+  .caja{
+    background-color: #D8FFF9;
+    white-space: nowrap;
+    display: inline-block;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+   }
+  
+  #iconos{
+   padding: 1rem;   
+    align-items: center;
+   }
+  
+  #iconos img{
+    white-space: nowrap;
+    display: inline-block;
+    margin-right: 2rem;
+  }
+
+
+
+/* ============ page contactanos ============ */
+.contenedor_principal_contactanos{
+    background-color: #FFF9EC;
+}
+
+#formContactanos{
+    --form-ok-color: #6fcf97;
+    --form-error-color: #cc3333;
+    margin-left: auto;
+    
+}
+
