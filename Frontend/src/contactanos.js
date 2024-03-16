@@ -1,5 +1,3 @@
-console.log("Holi");
-console.log("holi2");
 
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('.formContactanos');
