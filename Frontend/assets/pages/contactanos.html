@@ -36,30 +36,43 @@
                     </div>
 
                     <!-- Formulario -->
-                    <div class="col-6 col-md-6 col-sm-12">
+                    <div class="col-6 col-md-6 col-sm-12 contenedor_form_contactanos">
                         <section class="text-center">
                             <h1>Contáctanos</h1>
                         </section>
                         <form class="formContactanos col-sm-12">
                             <div class="mb-3">
                                 <label for="inputNombreContactanos" class="form-label">Nombre completo</label>
-                                <input type="text" class="form-control" id="inputNombreContactanos" placeholder="ej. Juan Pérez"
+                                <input type="text" name="nombreContactanos" class="form-control" id="inputNombreContactanos" placeholder="ej. Juan Pérez"
                                     required>
                             </div>
                             <div class="mb-3">
                                 <label for="inputEmailContactanos" class="form-label">Correo electrónico</label>
-                                <input type="email" class="form-control" id="inputEmailContactanos"
+                                <input type="email" name="emailContactanos" class="form-control" id="inputEmailContactanos"
                                     placeholder="ej. Juanperez@gmail.com" required>
                             </div>
+
+
+                            <div class="mb-3">
+                                <label for="inputEmailContactanos" class="form-label">Correo electrónico</label>
+                                <input type="number" name="emailContactanos" class="form-control" id="inputEmailContactanos"
+                                    placeholder="ej. Juanperez@gmail.com" required>
+                            </div>
+
                             <div class="mb-3">
                                 <label for="inputMensajeContactanos" class="form-label">Mensaje</label>
-                                <textarea class="form-control" id="inputMensajeContactanos"
+                                <textarea class="form-control" name="comentarioContactanos" id="inputMensajeContactanos"
                                     placeholder="ej. Estoy interesado en..." required></textarea>
                             </div>
                             <div class="text-center">
                                 <button type="submit" class="btn_formulario_contactanos">Enviar</button>
                             </div>
                         </form>
+
+                        <!-- Contenedor de error  -->
+                        <div class="contenedor_errores_contactanos">
+
+                        </div>
                     </div>
                 </div>
             </div>
