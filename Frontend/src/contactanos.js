@@ -1,4 +1,4 @@
-
+console.log("Holi");
 
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('.formContactanos');
