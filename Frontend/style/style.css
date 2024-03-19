@@ -26,6 +26,7 @@ body {
 
 /* ================ header ================ */
 
+
 .navbar{
   margin: 0;
   padding: 0;
@@ -33,11 +34,12 @@ body {
 
 .collapse,
 .nav-link,
+.navbar,
 .nav-bg,
 .icons,
 .icon,
 #navbar-bg{
-  background-color:var(--color-principal);
+  background-color:rgb(0, 0, 0, 0);
 }
 
 
@@ -53,6 +55,7 @@ body {
   .icon-footer,
   #iconos{
     background-color: var(--color_footer);
+    margin: 0rem 1rem;
   }
   
   .caja{
@@ -62,17 +65,29 @@ body {
     padding: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    
    }
   
   #iconos{
     padding: 1rem;   
     align-items: center;
+    
    }
   
   #iconos img{
     white-space: nowrap;
     display: inline-block;
     margin-right: 2rem;
+  }
+
+  #foot{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color_footer);
+  }
+
+  #footer-content{
+    background-color: var(--color_footer);
   }
 
 /* ============================================= */
@@ -313,6 +328,105 @@ a {
 }
 
 
+/*=============== banner ===============*/
+.banner{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#description{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0px 0px 0px 3px blue;
+}
+
+.banner-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0rem 2rem;
+  box-shadow: 0px 0px 0px 3px red;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+main li{
+  display: block;
+  margin-top: 10px;
+  color: var(--color-contraste);
+  font-size: x-large;
+}
+
+main li a.active{
+  font-weight: bold;
+  font-size: xx-large;
+  color: var(--color-contraste);
+}
+
+main a{
+  color: inherit;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.banner-pdt{
+  margin: 0.5rem 3rem;
+  padding: 1rem;
+  box-shadow: 0px 0px 0px 2px var(--color-contraste);
+  border: none;
+  border-radius: 0rem;
+}
+
+#buy{
+  background-color: var(--color-contraste);
+  color: var(--color-principal);
+}
+
+.slider{
+  color: var(--color-contraste);
+  grid-template-columns: 35% 65%;
+  position: relative;
+  display: grid;
+}
+
+.slider .content_container{
+  padding: 40px;
+}
+
+.slider .slides{
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.slider .slides .slide{
+  min-height: calc(100%);
+  
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  height: 95%;
+}
+
+.img-banner{
+  max-height: 800px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+  height: 95%;
+  object-fit: cover;
+}
+
+
 /*=============== BREAKPOINTS ===============*/
 
 @media screen and (max-width: 320px) {
@@ -345,3 +459,7 @@ a {
     right: -1rem;
   }
 }
+
+
+
+
