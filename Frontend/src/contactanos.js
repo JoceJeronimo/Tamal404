@@ -1,5 +1,4 @@
 
-
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('.formContactanos');
     const contenedorErrores = document.querySelector('.contenedor_errores_contactanos');
@@ -11,10 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Obtener los valores de los campos de entrada
         const nombre = formData.get('nombreContactanos');
         const email = formData.get('emailContactanos');
+        const telefono = formData.get('telefonoContactanos');
         const comentario = formData.get('comentarioContactanos');
 
         // validar los inputs del formulario con expresiones regulares
-        const validar = validarInputs(nombre, email, comentario);
+        const validar = validarInputs(nombre, email,telefono, comentario);
 
         if (!validar) {
             return;
@@ -62,12 +62,14 @@ document.addEventListener('DOMContentLoaded', () => {
 }); 
 
 
-async function validarInputs(nombre, email, comentario) {
+async function validarInputs(nombre, email,telefono, comentario) {
 
 
     console.log("Nombre: " + nombre);
     console.log("Email: " + email);
+    console.log("telefono: "+telefono)
     console.log("Comentario: " + comentario);
+    
     const contenedorErrores = document.querySelector('.contenedor_errores_contactanos');
 
     let validacion = true;
@@ -77,12 +79,15 @@ async function validarInputs(nombre, email, comentario) {
 
     // validar que el correo solo contenga letras, numeros, puntos, guiones, guion bajo y arroba
     let regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+
+    // validar el numero de telefono
+
+    let regexTel = /^[0-9]+$/;
+
     
-
     // limpiar el contenedor de errores
-
     contenedorErrores.innerHTML = '';
-
 
     if (!regex.test(nombre)) {
         validacion = false;
@@ -118,20 +123,40 @@ async function validarInputs(nombre, email, comentario) {
         }, 4000)
     }
 
+    // validar que sean solo numeros 
+    if (telefono.length != 10 ) {
+        validacion = false;
+        contenedorErrores.innerHTML += `
+        <div class="alert alert-danger" role="alert">
+            El telefono debe contener 10 numeros.
+        </div>
+        `;
+
+        // Limpiar el contenedor de errores
+        setTimeout(() => {
+            contenedorErrores.innerHTML = '';
+        }, 4000)
+    }
+
+
 
     // validacion del telefono
-    if (comentario.value.length < 10) {
+    if (comentario.length < 10) {
         validacion = false;
         contenedorErrores.innerHTML += `
         <div class="alert alert-danger" role="alert">
             El telefono debe tener al menos 10 números.
         </div>
         `;
+
+        // Limpiar el contenedor de errores
+        setTimeout(() => {
+            contenedorErrores.innerHTML = '';
+        }, 4000)
     }
 
-
     // validar que el comentario no exceda los 255 caracteres
-    if (comentario.value.length > 255) {
+    if (comentario.length > 255) {
         validacion = false;
         alert("El comentario no puede tener más de 255 caracteres.");
     }
