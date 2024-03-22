@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    background-color: #FFF9EC;
+}
+
+img{
+    max-width: 100%;
+    height: 100%; 
+    justify-content: center;
+}
+.btn{
+    background-color: #B2AB99; 
+    border-color: #B2AB99;
+    color: #645E4E;
+}
+.card-img{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+.container-list-products{
+    grid-template-columns: repeat(4,1fr);
+    display: grid;
+    gap: 25px;
+}
+   
+
+@media screen and (max-width: 767px) {
+    .container-list-products {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+.text-product{
+    text-align: center;
+}
+.info-card{
+    background-color: #645E4E;
+    color: white;
+}
+
+.titulo-letras{
+color: #645E4E;
+}
